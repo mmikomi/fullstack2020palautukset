@@ -38,12 +38,12 @@ const App = (props) => {
       <h1>Anecdote of the day</h1>
       <h3>{props.anecdotes[selected]}</h3>
       <h4>has {points[selected]} votes</h4>
-      <h5>testi: {points}</h5>
       <Button text='vote' onClick={vote} />
       <Button text='next anecdote' onClick={nextAnecdote} />
 
       <h1>Anecdote with the most votes</h1>
       <h3>{props.anecdotes[winner]}</h3>
+      <h4>has {points[winner]} votes</h4>
     </div>
   )
 }
